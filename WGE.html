@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Golf Association</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: lightgray;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    /* 🔥 THIS MAKES THEM SIDE BY SIDE */
+    .champions-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .champion-card {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      width: 280px;
+    }
+
+    .champion-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .champion-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .champion-card p {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* 🔥 Make World Champion stand out */
+    .main-champion {
+      border: 2px solid gold;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      color: gray;
+    }
+    .champion-card img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>World Golf Association</h1>
+    <p>
+      A competitive golf league in Western Pennsylvania where top players
+      earn championship belts and defend their titles.
+    </p>
+  </header>
+
+  <section class="section">
+    <h2>Current Champions</h2>
+
+    <div class="champions-container">
+
+      <!-- Intercontinental -->
+      <div class="champion-card">
+        <img src="intercontinetal.jpg" alt="Intercontinental Champion">
+        <h3>Intercontinental Champion</h3>
+        <p>April 6th-current</p>
+      </div>
+
+      <!-- World Heavyweight (MAIN) -->
+      <div class="champion-card main-champion">
+        <img src="Heavyweight.jpeg" alt="World Heavyweight Champion">
+        <h3>World Heavyweight Champion</h3>
+        <p>March 13th-current</p>
+      </div>
+
+      <!-- Tag Team -->
+      <div class="champion-card">
+        <img src="tagteam.jpg" alt="Tag Team Champions">
+        <h3>Tag Team Champions</h3>
+        <p>Current Reign: 30 Days</p>
+      </div>
+
+    </div>
+  </section>
+  <section class="section">
+    <style>
+        .rankings-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.ranking-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px 30px;
+  margin-bottom: 15px;
+}
+
+.rank-number {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: gold;
+  width: 60px;
+}
+
+.rank-name {
+  flex: 1;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.champion-indicator {
+  font-size: 1.6rem;
+  color: gold;
+}
+
+.champion-indicator img {
+  width: 65px;
+  height: auto;
+}
+    </style>
+  <h2>Power Rankings</h2>
+
+  <div class="rankings-container">
+
+    <div class="ranking-card">
+  <span class="rank-number">1</span>
+  <span class="rank-name">Nick</span>
+  <span class="champion-indicator">
+    <img src="WHC.webp" alt="Heavyweight Champion">
+  </span>
+</div>
+
+    <div class="ranking-card">
+      <span class="rank-number">2</span>
+      <span class="rank-name">Chad</span>
+      <span class="champion-indicator"></span>
+    </div>
+
+    <div class="ranking-card">
+      <span class="rank-number">3</span>
+      <span class="rank-name">Nate</span>
+      <span class="champion-indicator"></span>
+    </div>
+
+    <div class="ranking-card">
+  <span class="rank-number">4</span>
+  <span class="rank-name">Joey</span>
+  <span class="champion-indicator">
+    <img src="IC.webp" alt="Intercontinental Champion">
+  </span>
+</div>
+
+    <div class="ranking-card">
+      <span class="rank-number">5</span>
+      <span class="rank-name">Richie</span>
+      <span class="champion-indicator"></span>
+    </div>
+
+    <div class="ranking-card">
+      <span class="rank-number">6</span>
+      <span class="rank-name">Aidyn</span>
+      <span class="champion-indicator"></span>
+    </div>
+
+    <div class="ranking-card">
+      <span class="rank-number">7</span>
+      <span class="rank-name">Connor</span>
+      <span class="champion-indicator"></span>
+    </div>
+
+  </div>
+</section>
+  <footer>
+    <p>© 2026 World Golf Association</p>
+  </footer>
+
+</body>
+</html>
